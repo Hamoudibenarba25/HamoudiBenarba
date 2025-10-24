@@ -3,6 +3,9 @@ import { useInView } from 'framer-motion';
 import { useRef, useEffect, useState } from 'react';
 import { Download } from 'lucide-react';
 import { FiLinkedin } from 'react-icons/fi';
+
+import PortraitImg from '/images/Portrait.png';
+import ResumePdf from '/HamoudiBenarbaResume.pdf';
 import { SiResearchgate, SiAcademia } from 'react-icons/si';
 
 const socialLinks = [
@@ -111,7 +114,7 @@ export function About() {
                 
                 <div className="overflow-hidden rounded-2xl">
                   <img
-                    src="/images/Portrait.png"
+                    src={PortraitImg}
                     alt="Hamoudi Benarba"
                     className={`w-full max-w-md object-cover shadow-2xl transition-opacity duration-500 ${
                       imageLoaded ? 'opacity-100' : 'opacity-0'
@@ -184,7 +187,7 @@ export function About() {
                   initial={{ opacity: 0, scale: 0.8 }}
                   animate={isInView ? { opacity: 1, scale: 1 } : { opacity: 0, scale: 0.8 }}
                   transition={{ duration: 0.3, delay: 0.7 }}
-                  href="/HamoudiBenarbaResume.pdf"
+                  href={ResumePdf}
                   download
                   className="group inline-flex items-center gap-2 rounded-lg bg-dark-900/50 px-6 py-3 text-sm font-medium text-white ring-1 ring-dark-700 backdrop-blur-sm transition-all duration-300 hover:bg-dark-800/50 hover:ring-dark-600"
                 >
