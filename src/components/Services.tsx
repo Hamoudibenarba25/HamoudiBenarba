@@ -27,7 +27,7 @@ const services = [
   },
   {
     name: 'Translation Services',
-    description: 'Professional translation between English, Arabic, and Turkish for various documents.',
+    description: 'Professional translation between English and Arabic for various documents.',
     icon: RiTranslate,
     color: '#10B981', // Green
   },
